@@ -2,17 +2,15 @@
 <html>
   <head></head>
   <body>
-    <h1>Welcome to the Home Page</h1>
-    <p>
-      This is a simple web page that demonstrates how to use the
-      <code>h1</code> and <code>p</code> tags.
-    </p>
-    <p>This is a paragraph.</p>
-    <p @click="goToPage()">This is a paragraph with a click handler.</p>
+    <button onclick="goToPage()">KeyCode</button>
+    <button onclick="goToPage1()">JavaScript Drum Kit</button>
   </body>
 </html>
 <script>
   function goToPage() {
     window.location.href = "KeyCode.html";
+  }
+  function goToPage1() {
+    window.location.href = "JavaScript Drum Kit.html";
   }
 </script>
