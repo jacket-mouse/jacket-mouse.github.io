@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    Lees0nのBlog
+  </head>
   <body>
-    <button onclick="goToPage()">KeyCode</button>
-    <button onclick="goToPage1()">JavaScript Drum Kit</button>
+    <div>
+      <button onclick="goToPage()">KeyCode</button>
+      <button onclick="goToPage1()">JavaScript Drum Kit</button>
+    </div>
   </body>
 </html>
 <script>
+  const JS_File_Path = "./JavaScript Project";
   function goToPage() {
-    window.location.href = "KeyCode.html";
+    window.location.href = JS_File_Path + "/Tools/KeyCode.html";
   }
   function goToPage1() {
-    window.location.href = "JavaScript Drum Kit.html";
+    window.location.href = JS_File_Path + "/Drum Kit/JavaScript Drum Kit.html";
   }
 </script>
