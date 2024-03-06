@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KeyCode</title>
+    <link rel="icon" href="https://fav.farm/🖥" />
+  </head>
+  <body>
+    <div class="key" id="key"></div>
+    <div class="keyCode" id="keyCode"></div>
+  </body>
+</html>
+<script>
+  function key(e) {
+    keyCode = e.keyCode;
+    key = e.key;
+    document.getElementById("key").innerHTML = key;
+    document.getElementById("keyCode").innerHTML = keyCode;
+  }
+  window.addEventListener("keydown", key);
+</script>
+<style>
+  .key {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 400px;
+    text-align: center;
+  }
+  .keyCode {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    text-align: center;
+  }
+  html {
+    font-size: 10px;
+    background-size: cover;
+  }
+</style>
