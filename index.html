@@ -4,12 +4,28 @@
     <meta charset="UTF-8" />
     <!--视口元素可以确保页面以视口宽度进行渲染，避免移动端浏览器上因页面过宽导致缩放。-->
     <meta name="viewport" content="width=device-width" />
-    <title>Lees0nのBlog</title>
+    <title>1ees0nのBlog</title>
   </head>
   <body>
+    <!--标题行-->
+    <div class="top">
+      <div>1ees0nのBlog</div>
+      <input />
+    </div>
+
     <main>
-      <a href="./JavaScript Project/Tools/KeyCode.html">KeyCode</a>
-      <button @click="goToPage()">Tools</button>
+      <div class="JavaScript">
+        <h1>JavaScript Exercises</h1>
+        <a href="./JavaScript Project/Tools/KeyCode.html">KeyCode</a>
+        <a href="./JavaScript Project/Drum Kit/JavaScript Drum Kit.html"
+          >Drum Kit</a
+        >
+        <a href="./JavaScript Project/Clock/clock.html">Clock</a>
+        <a href="./JavaScript Project/CSS variables/css variables.html"
+          >CSS variables</a
+        >
+      </div>
+
       <aside>
         <h2>相关链接</h2>
         <ul>
@@ -19,7 +35,6 @@
         </ul>
       </aside>
     </main>
-
     <footer>
       <p>© 2050 某某保留所有权利</p>
     </footer>
@@ -40,4 +55,23 @@
     window.location.href = JS_File_Path + "/CSS variables/css variables.html";
   }
 </script>
-<style></style>
+<style>
+  .JavaScript {
+    display: grid;
+  }
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 20px;
+    grid-gap: 10px;
+  }
+  aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+  }
+</style>
