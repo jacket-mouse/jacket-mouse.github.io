@@ -10,61 +10,43 @@
     <!--标题行-->
     <div class="top">
       <div>1ees0nのBlog</div>
-      <input />
     </div>
-
     <main>
       <div class="JavaScript">
-        <h1>JavaScript Exercises</h1>
-        <a href="./JavaScript Project/Tools/KeyCode.html">KeyCode</a>
-        <a href="./JavaScript Project/Drum Kit/JavaScript Drum Kit.html"
-          >Drum Kit</a
-        >
-        <a href="./JavaScript Project/Clock/clock.html">Clock</a>
-        <a href="./JavaScript Project/CSS variables/css variables.html"
-          >CSS variables</a
-        >
+        <aside>
+          <h2>JavaScript Exercises</h2>
+          <ul>
+            <li>
+              <a href="./JavaScript Project/Tools/KeyCode.html">KeyCode</a>
+            </li>
+            <li>
+              <a href="./JavaScript Project/Drum Kit/JavaScript Drum Kit.html"
+                >Drum Kit</a
+              >
+            </li>
+            <li>
+              <a href="./JavaScript Project/Clock/clock.html">Clock</a>
+            </li>
+            <li>
+              <a href="./JavaScript Project/CSS variables/css variables.html"
+                >CSS variables</a
+              >
+            </li>
+          </ul>
+        </aside>
       </div>
-
-      <aside>
-        <h2>相关链接</h2>
-        <ul>
-          <li>
-            <a href="#">这是一个超链接</a>
-          </li>
-        </ul>
-      </aside>
     </main>
     <footer>
       <p>© 2050 某某保留所有权利</p>
     </footer>
   </body>
 </html>
-<script>
-  const JS_File_Path = "./JavaScript Project";
-  function goToPage() {
-    window.location.href = JS_File_Path + "/Tools/KeyCode.html";
-  }
-  function goToPage1() {
-    window.location.href = JS_File_Path + "/Drum Kit/JavaScript Drum Kit.html";
-  }
-  function goToPage2() {
-    window.location.href = JS_File_Path + "/Clock/clock.html";
-  }
-  function goToPage3() {
-    window.location.href = JS_File_Path + "/CSS variables/css variables.html";
-  }
-</script>
+<script></script>
 <style>
   .JavaScript {
     display: grid;
   }
-  .top {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px 20px;
-    grid-gap: 10px;
-  }
+
   aside {
     width: 40%;
     padding-left: 0.5rem;
