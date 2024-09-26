@@ -3,38 +3,45 @@
 
 <head>
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width" />
   <title>1ees0nのBlog</title>
 </head>
 
 <body>
-  <div class="top">
-    <div>1ees0nのBlog</div>
-  </div>
+  <nav>
+    <a href="#Home">Home</a>
+    <a href="#JavaScript">JavaScript</a>
+    <a href="#CSS">CSS</a>
+  </nav>
   <main>
-    <div class="JavaScript">
-      <aside>
-        <h2>Database</h2>
-        <ul>
-          <li>
-            <a href="./DB/00-引言.html">引言</a>
-          </li>
-        </ul>
+    <div id="Home" class="page active">
+      <h2>Welcome</h2>
+    </div>
+    <div id="JavaScript" class="page">
+      <h2>JavaScript Exercises</h2>
+      <ul>
+        <li>
+          <a href="./JavaScript Project/Tools/KeyCode.html">KeyCode</a>
+        </li>
+        <li>
+          <a href="./JavaScript Project/Drum Kit/JavaScript Drum Kit.html">Drum Kit</a>
+        </li>
+        <li>
+          <a href="./JavaScript Project/Clock/clock.html">Clock</a>
+        </li>
+        <li>
+          <a href="./JavaScript Project/CSS variables/css variables.html">CSS variables</a>
+        </li>
+      </ul>
 
-        <h2>JavaScript Exercises</h2>
+    </div>
+    <div id="CSS" class="page">
+      <aside>
+
+        <h2>CSS Exercises</h2>
         <ul>
           <li>
-            <a href="./JavaScript Project/Tools/KeyCode.html">KeyCode</a>
-          </li>
-          <li>
-            <a href="./JavaScript Project/Drum Kit/JavaScript Drum Kit.html">Drum Kit</a>
-          </li>
-          <li>
-            <a href="./JavaScript Project/Clock/clock.html">Clock</a>
-          </li>
-          <li>
-            <a href="./JavaScript Project/CSS variables/css variables.html">CSS variables</a>
+            <a href="./CSS Project/Button/button.html">button</a>
           </li>
         </ul>
       </aside>
@@ -45,6 +52,26 @@
 </body>
 
 </html>
-<script></script>
+<script>
+  function navigate() {
+    const hash = location.hash || '#Home';
+    document.querySelectorAll('.page').forEach(page => {
+      page.classList.remove('active');
+    });
+    const activePage = document.querySelector(hash);
+    if (activePage) {
+      activePage.classList.add('active');
+    }
+  }
+  window.addEventListener('hashchange', navigate);
+  window.addEventListener('load', navigate);
+</script>
 <style>
+  .page {
+    display: none;
+  }
+
+  .page.active {
+    display: block;
+  }
 </style>
