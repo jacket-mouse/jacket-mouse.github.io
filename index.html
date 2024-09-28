@@ -9,18 +9,23 @@
 </head>
 
 <body>
-  <nav>
-    <a href="#Home">Home</a>
-    <a href="#JavaScript">JavaScript</a>
-    <a href="#CSS">CSS</a>
-    <a href="#Tools">Tools</a>
-  </nav>
+  <header>
+    <a href="#" class="logo">1ees0n</a>
+    <nav>
+      <a href="#Home" class="active">Home</a>
+      <a href="#JavaScript">JavaScript</a>
+      <a href="#CSS">CSS</a>
+      <a href="#Tools">Tools</a>
+      <a href="#Manual">Manual</a>
+      <a href="#Algorithm">Algorithm</a>
+    </nav>
+  </header>
+
   <main>
-    <div id="Home" class="page active">
+    <section id="Home">
       <h2>Welcome</h2>
-    </div>
-    <div id="JavaScript" class="page">
-      <h2>JavaScript Exercises</h2>
+    </section>
+    <section id="JavaScript">
       <ul>
         <li>
           <a href="./JavaScript Project/Tools/KeyCode.html">KeyCode</a>
@@ -36,25 +41,51 @@
         </li>
       </ul>
 
-    </div>
-    <div id="CSS" class="page">
+    </section>
+    <section id="CSS">
       <aside>
-
-        <h2>CSS Exercises</h2>
         <ul>
           <li>
             <a href="./CSS Project/Button/button.html">button</a>
           </li>
         </ul>
       </aside>
-    </div>
-    <div id="Tools" class="page">
+    </section>
+    <section id="Tools">
       <ul>
+        <li>
+          <a href="https://docs.docker.com/reference/cli/docker/">Docker docs</a>
+        </li>
         <li>
           <a href="https://docker.easydoc.net/">Docker 快速入门</a>
         </li>
+        <li>
+          <a href="https://hub.docker.com/">Docker hub</a>
+        </li>
       </ul>
-    </div>
+    </section>
+    <section id="Manual">
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/zh-CN/">mdn</a>
+        </li>
+        <li>
+          <a href="https://www.gnu.org/">gnu</a>
+        </li>
+        <li>
+          <a href="https://en.cppreference.com/w/">cppreference</a>
+      </ul>
+    </section>
+    <section id="Algorithm">
+      <ul>
+        <li>
+          <a href="https://github.com/youngyangyang04/leetcode-master?tab=readme-ov-file">代码随想录</a>
+        </li>
+        <li>
+          <a href="https://www.acwing.com/blog/content/10558">STL</a>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer>
   </footer>
@@ -62,25 +93,84 @@
 
 </html>
 <script>
-  function navigate() {
-    const hash = location.hash || '#Home';
-    document.querySelectorAll('.page').forEach(page => {
-      page.classList.remove('active');
-    });
-    const activePage = document.querySelector(hash);
-    if (activePage) {
-      activePage.classList.add('active');
-    }
-  }
-  window.addEventListener('hashchange', navigate);
-  window.addEventListener('load', navigate);
+  // function navigate() {
+  //   const hash = location.hash || '#Home';
+  //   document.querySelectorAll('.page').forEach(page => {
+  //     page.classList.remove('active');
+  //   });
+  //   const activePage = document.querySelector(hash);
+  //   if (activePage) {
+  //     activePage.classList.add('active');
+  //   }
+  // }
+  // window.addEventListener('hashchange', navigate);
+  // window.addEventListener('load', navigate);
 </script>
 <style>
-  .page {
+  /* .page {
     display: none;
   }
 
   .page.active {
     display: block;
+  } */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,300,400,500,600,700,800,900&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.25);
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px 0;
+  }
+
+  .logo {
+    position: relative;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  header nav {
+    display: flex;
+    gap: 10px;
+  }
+
+  header nav a {
+    position: relative;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  header nav a.active {
+    background: var(--clr);
+    color: #333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 </style>
