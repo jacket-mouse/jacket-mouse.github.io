@@ -92,6 +92,8 @@ fi
 rm -f /etc/update-motd.d/60-unminimize
 ```
 
+虽然这个脚本还是没解决我的问题……
+
 ## 参考文章
 
 ---
