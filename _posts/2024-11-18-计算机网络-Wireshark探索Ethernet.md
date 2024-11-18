@@ -47,3 +47,7 @@ Ethernet II 说明是 DIX Ethernet 而不是 IEEE 802.3。
 
 广播以太网地址为 ff:ff:ff:ff:ff:ff
 当首位为 01 时，为多播，也就是第一个比特的最低位为 1。
+
+![](https://1ees0n.oss-cn-qingdao.aliyuncs.com/Github/20241118233344.png)
+
+途中特定的位为 1 说明为多播或广播 📢，为 0 说明为单播。
