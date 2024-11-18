@@ -7,7 +7,7 @@ More to learn
 
 ### Contact
 
-Drops: gεεδ
+Drops: δε δ
 
 Github: [jacket-mouse](https://github.com/jacket-mouse)
 
