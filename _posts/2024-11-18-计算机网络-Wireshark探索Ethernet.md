@@ -26,6 +26,7 @@ Ethernet II 说明是 DIX Ethernet 而不是 IEEE 802.3。
 因为帧长超过了 64 所以没有 Pad 填充，而且在最后也没有发现校验和字段。
 
 ![](https://1ees0n.oss-cn-qingdao.aliyuncs.com/Github/20241118232153.png)
+
 单位：byte
 
 | 目的地址 | 源地址 | Type | IP 数据报 | （Checksum） |
